@@ -3,6 +3,7 @@
 =======
 #添加Comment2
 >>>>>>> ZeeBranch
+#添加Comments From Another account. 
 
 library(queuecomputer)
 P_0_func <- function(rho, k){
