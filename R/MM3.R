@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #备注on Master
+=======
+#添加Comment2
+>>>>>>> ZeeBranch
 
 library(queuecomputer)
 P_0_func <- function(rho, k){
