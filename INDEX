@@ -1,0 +1,26 @@
+as.server.list          Creates a '"server.list"' object from a list of
+                        times and starting availability.
+as.server.stepfun       Create a 'server.stepfun' object with a roster
+                        of times and number of available servers.
+average_queue           Compute time average queue length
+create_batches          Creates batches of customer arrivals from a
+                        dataframe within a 'dplyr::do' command
+depart                  get departure times from 'queue_list' object
+lag_step                Add lag to vector of arrival times.
+plot.queue_list         ggplot method for output from queueing model
+print.queue_list        print method for objects of class 'queue_list'
+print.summary_queue_list
+                        Print method for output of
+                        'summary.queue_list'.
+ql_summary              Summarise queue lengths
+queue                   Compute the departure times for a set of
+                        customers in a queue from their arrival and
+                        service times.
+queue_lengths           Compute queue lengths from arrival, service and
+                        departure data
+queue_step              Compute the departure times and queue lengths
+                        for a queueing system from arrival and service
+                        times.
+summary.queue_list      Summary method for queue_list object
+wait_step               Compute maximum time for each row from two
+                        vectors of arrival times.
