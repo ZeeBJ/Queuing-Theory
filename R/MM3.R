@@ -1,18 +1,20 @@
+#备注on Master
+
 library(queuecomputer)
 P_0_func <- function(rho, k){
   sum_i <- rep(NA, k)
-  
+
   for(i in 0:I(k-1))
   {
     sum_i[i+1] <- rho^i / factorial(i)
   }
-  
+
   p_0 <- 1/(sum(sum_i) + rho^k/(factorial(k - 1) * (k - rho)))
   return(p_0)
 }
 
 P_n <- function(rho,n,k){
-  
+
   p_0 <- P_0_func(rho, k)
   if(n <= k){
     output <- rho^n / factorial(n) * p_0
@@ -24,7 +26,7 @@ P_n <- function(rho,n,k){
 
 Lq <- function(rho, k){
   p_0 <- P_0_func(rho, k)
-  
+
   output <- p_0 * rho^{k+1} / ( factorial(k-1) * (k - rho)^2)
   return(output)
 }
