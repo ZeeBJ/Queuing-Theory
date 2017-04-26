@@ -1,5 +1,3 @@
-#添加Comment
-
 library(queuecomputer)
 P_0_func <- function(rho, k){
   sum_i <- rep(NA, k)
